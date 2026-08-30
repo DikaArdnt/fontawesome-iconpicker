@@ -1,0 +1,37 @@
+{
+  "name": "fontawesome-iconpicker",
+  "version": "4.0.0",
+  "description": "A simple, lightweight, and production-friendly Font Awesome icon picker with lazy rendering, shared resources, and improved mobile performance.",
+  "homepage": "https://github.com/DikaArdnt/fontawesome-iconpicker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DikaArdnt/fontawesome-iconpicker.git"
+  },
+  "author": "Dika Ardnt <mail@dikaardnt.com>",
+  "license": "MIT",
+  "main": "dist/js/fontawesome-iconpicker.js",
+  "bugs": {
+    "url": "https://github.com/DikaArdnt/fontawesome-iconpicker/issues"
+  },
+  "keywords": [
+    "bootstrap",
+    "fontawesome",
+    "icon-picker",
+    "popover",
+    "picker"
+  ],
+  "scripts": {
+    "build": "grunt",
+    "build:compat": "grunt compat",
+    "build:icons": "node scripts/build-icons.mjs",
+    "build:icons:search": "node scripts/build-icons.mjs --search=1",
+    "dev": "grunt dev"
+  },
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}

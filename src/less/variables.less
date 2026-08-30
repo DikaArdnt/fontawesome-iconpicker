@@ -1,0 +1,103 @@
+// Layout
+@picker-width: 352px;
+@picker-mobile-gutter: 12px;
+@grid-columns: 6;
+@grid-columns-mobile: 5;
+@icon-cell-size: 42px;
+@icon-font-size: 16px;
+@grid-gap: 8px;
+@items-max-height: 304px;
+
+// Spacing
+@space-xs: 4px;
+@space-sm: 8px;
+@space-md: 12px;
+@space-lg: 16px;
+
+// Radius
+@radius-sm: 8px;
+@radius-md: 12px;
+@radius-lg: 16px;
+
+// Colors
+@surface: #ffffff;
+@surface-subtle: #f8f9fa;
+@surface-hover: #e9ecef;
+@surface-active: #e7f1ff;
+@border: #dee2e6;
+@border-strong: #adb5bd;
+@text: #212529;
+@text-muted: #6c757d;
+@primary: #0d6efd;
+@primary-hover: #0b5ed7;
+@primary-soft: #cfe2ff;
+@primary-ring: rgba(13, 110, 253, 0.25);
+@danger: #dc3545;
+
+// Colors (Dark)
+@surface-dark: #212529;
+@surface-subtle-dark: #2b3035;
+@surface-hover-dark: #343a40;
+@border-dark: #495057;
+@border-strong-dark: #6c757d;
+@text-dark: #dee2e6;
+@text-muted-dark: rgba(222, 226, 230, 0.75);
+@primary-soft-dark: #031633;
+@primary-ring-dark: rgba(13, 110, 253, 0.35);
+
+@shadow-popover: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+@shadow-popover-dark: 0 1rem 3rem rgba(0, 0, 0, 0.45);
+@shadow-focus: 0 0 0 0.25rem @primary-ring;
+
+.iconpicker-theme-vars() {
+   --iconpicker-surface: var(--bs-body-bg, @surface);
+   --iconpicker-surface-subtle: var(--bs-tertiary-bg, @surface-subtle);
+   --iconpicker-surface-hover: var(--bs-secondary-bg, @surface-hover);
+   --iconpicker-border: var(--bs-border-color, @border);
+   --iconpicker-border-strong: var(--bs-border-color, @border-strong);
+   --iconpicker-text: var(--bs-body-color, @text);
+   --iconpicker-text-muted: var(--bs-secondary-color, @text-muted);
+   --iconpicker-primary: var(--bs-primary, @primary);
+   --iconpicker-primary-rgb: var(--bs-primary-rgb, 13, 110, 253);
+   --iconpicker-primary-hover: @primary-hover;
+   --iconpicker-primary-hover: color-mix(in srgb, var(--iconpicker-primary) 88%, var(--bs-emphasis-color, #000));
+   --iconpicker-primary-soft: var(--bs-primary-bg-subtle, @primary-soft);
+   --iconpicker-primary-border-subtle: var(--bs-primary-border-subtle, rgba(13, 110, 253, 0.22));
+   --iconpicker-primary-ring: rgba(var(--iconpicker-primary-rgb), 0.25);
+   --iconpicker-selected-color: var(--bs-white, #fff);
+   --iconpicker-shadow: var(--bs-box-shadow-lg, @shadow-popover);
+}
+
+.iconpicker-theme-vars-dark() {
+   --iconpicker-surface: var(--bs-body-bg, @surface-dark);
+   --iconpicker-surface-subtle: var(--bs-tertiary-bg, @surface-subtle-dark);
+   --iconpicker-surface-hover: var(--bs-secondary-bg, @surface-hover-dark);
+   --iconpicker-border: var(--bs-border-color, @border-dark);
+   --iconpicker-border-strong: var(--bs-border-color, @border-strong-dark);
+   --iconpicker-text: var(--bs-body-color, @text-dark);
+   --iconpicker-text-muted: var(--bs-secondary-color, @text-muted-dark);
+   --iconpicker-primary: var(--bs-primary, @primary);
+   --iconpicker-primary-rgb: var(--bs-primary-rgb, 13, 110, 253);
+   --iconpicker-primary-hover: @primary;
+   --iconpicker-primary-hover: color-mix(in srgb, var(--iconpicker-primary) 84%, var(--bs-emphasis-color, #fff));
+   --iconpicker-primary-soft: var(--bs-primary-bg-subtle, @primary-soft-dark);
+   --iconpicker-primary-border-subtle: var(--bs-primary-border-subtle, rgba(110, 168, 254, 0.28));
+   --iconpicker-primary-ring: rgba(var(--iconpicker-primary-rgb), 0.35);
+   --iconpicker-selected-color: var(--bs-white, #fff);
+   --iconpicker-shadow: var(--bs-box-shadow-lg, @shadow-popover-dark);
+}
+
+@popover-arrow-width: 9px;
+@popover-arrow-outer-width: 10px;
+@arrow-position: 16px;
+
+.clearfix() {
+   &:before,
+   &:after {
+      content: ' ';
+      display: table;
+   }
+   &:after {
+      clear: both;
+   }
+}
